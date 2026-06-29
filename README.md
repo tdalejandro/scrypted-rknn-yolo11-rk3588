@@ -1,0 +1,1 @@
+# scrypted-rknn-yolo11-rk3588
