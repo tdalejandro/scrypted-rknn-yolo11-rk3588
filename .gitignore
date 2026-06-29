@@ -10,7 +10,6 @@ python3.10-Linux-*/
 py/
 fs/
 
-# Add model binaries intentionally after license review.
-models/*.rknn
+# Keep large/intermediate model artifacts out by default.
 models/*.onnx
 models/*.pt

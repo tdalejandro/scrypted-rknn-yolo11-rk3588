@@ -39,10 +39,16 @@ Expected model filename:
 yolo11n_rk3588_optimized.rknn
 ```
 
-The plugin downloads the model from:
+The model is included under:
 
 ```text
-https://github.com/tdalejandro/scrypted-rknn-yolo11-rk3588/releases/download/v0.1.0/yolo11n_rk3588_optimized.rknn
+models/yolo11n_rk3588_optimized.rknn
+```
+
+The plugin fallback download URL is:
+
+```text
+https://github.com/tdalejandro/scrypted-rknn-yolo11-rk3588/raw/main/models/yolo11n_rk3588_optimized.rknn
 ```
 
 Recommended checksum for the tested 960x544 model:
@@ -52,6 +58,24 @@ sha256 f0ef2a43d4e9bc3ac56b9b2da2d02b60a3826887d624b9924da31539b74feeae
 ```
 
 Do not publish private camera images, RTSP URLs, Scrypted backups, or credentials.
+
+## Docker install
+
+Run from the repository root on the Docker host:
+
+```sh
+./scripts/install-docker.sh
+```
+
+Defaults:
+
+```text
+SCRYPTED_CONTAINER=scrypted
+SCRYPTED_RKNN_PLUGIN_DIR=/server/volume/plugins/@scrypted/rknn
+SCRYPTED_RKNN_MODEL=yolo11n_rk3588_optimized.rknn
+```
+
+The installer creates a backup under the plugin `backups/` directory before patching files.
 
 ## Notes
 

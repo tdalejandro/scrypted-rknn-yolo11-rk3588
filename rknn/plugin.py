@@ -27,7 +27,7 @@ from .text_recognition import TEXT_RECOGNITION_NATIVE_ID, TextRecognition
 
 rknn_verbose = False
 lib_download = 'https://github.com/airockchip/rknn-toolkit2/raw/v2.3.2/rknpu2/runtime/Linux/librknn_api/aarch64/librknnrt.so'
-model_download_tmpl = 'https://github.com/tdalejandro/scrypted-rknn-yolo11-rk3588/releases/download/v0.1.0/{}_{}_optimized.rknn'
+model_download_tmpl = 'https://github.com/tdalejandro/scrypted-rknn-yolo11-rk3588/raw/main/models/{}_{}_optimized.rknn'
 lib_path = '/usr/lib/librknnrt.so'
 DEFAULT_MAX_WORKERS = 4
 stderr_filter_lock = threading.Lock()
