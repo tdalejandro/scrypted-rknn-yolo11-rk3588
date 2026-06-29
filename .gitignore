@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+
+# Keep private Scrypted/runtime state out of the community repo.
+backups/
+python3.10-Linux-*/
+py/
+fs/
+
+# Add model binaries intentionally after license review.
+models/*.rknn
+models/*.onnx
+models/*.pt
