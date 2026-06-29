@@ -61,6 +61,18 @@ Do not publish private camera images, RTSP URLs, Scrypted backups, or credential
 
 ## Docker install
 
+This installer does not register a new Scrypted plugin. It patches an existing
+installed `@scrypted/rknn` plugin in place.
+
+It will:
+
+- back up the current `@scrypted/rknn` plugin files
+- replace the plugin Python files with this YOLO11n version
+- copy `models/yolo11n_rk3588_optimized.rknn` into the plugin `files/` directory
+
+After installation, restart the existing **Rockchip NPU Object Detection** plugin
+from the Scrypted UI.
+
 Run from the repository root on the Docker host:
 
 ```sh
