@@ -2,6 +2,12 @@
 
 Community fork/patch of the Scrypted Rockchip RKNN object detection plugin.
 
+Package/plugin ID:
+
+```text
+@tdalejandro/scrypted-rknn-yolo11
+```
+
 This version targets RK3588 and uses:
 
 - `rknn_toolkit_lite2 2.3.2`
@@ -59,7 +65,29 @@ sha256 f0ef2a43d4e9bc3ac56b9b2da2d02b60a3826887d624b9924da31539b74feeae
 
 Do not publish private camera images, RTSP URLs, Scrypted backups, or credentials.
 
-## Docker install
+## Scrypted plugin package
+
+This repository can be packaged as an independent Scrypted Python plugin using:
+
+```sh
+./scripts/build-plugin-zip.sh
+```
+
+The generated package layout matches the official Scrypted Python plugin format:
+
+```text
+package.json
+dist/plugin.zip
+README.md
+```
+
+The Scrypted plugin name is:
+
+```text
+Rockchip NPU Object Detection YOLO11
+```
+
+## Docker patch install
 
 This installer does not register a new Scrypted plugin. It patches an existing
 installed `@scrypted/rknn` plugin in place.

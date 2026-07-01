@@ -1,0 +1,41 @@
+{
+  "name": "@tdalejandro/scrypted-rknn-yolo11",
+  "version": "0.1.0",
+  "description": "Scrypted Rockchip NPU Object Detection with YOLO11n for RK3588",
+  "keywords": [
+    "scrypted",
+    "plugin",
+    "rknn",
+    "rockchip",
+    "rk3588",
+    "npu",
+    "yolo11",
+    "object",
+    "detect",
+    "detection",
+    "people",
+    "person"
+  ],
+  "scrypted": {
+    "name": "Rockchip NPU Object Detection YOLO11",
+    "pluginDependencies": [
+      "@scrypted/objectdetector"
+    ],
+    "runtime": "python",
+    "pythonVersion": {
+      "default": "3.10"
+    },
+    "type": "API",
+    "interfaces": [
+      "ObjectDetection",
+      "ObjectDetectionPreview",
+      "DeviceProvider"
+    ]
+  },
+  "files": [
+    "dist/plugin.zip",
+    "README.md",
+    "package.json"
+  ],
+  "license": "SEE LICENSE IN README"
+}
